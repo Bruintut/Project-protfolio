@@ -71,18 +71,18 @@ body{
 @media (max-width: 700px) {
   
   .menu {
-    position: absolute;
+    /* position: absolute; */
     top: 0;
-    margin-top: 50px;
+    margin-top: 10px;
     left: 0;
-    flex-direction: column;
+    /* flex-direction: column; */
     width: 100%;
     justify-content: center;
     align-items: center;
   }
   
   
-  .menu > li {
+  /* .menu > li {
     display: flex;
     justify-content: center;
     margin: 0;
@@ -93,10 +93,32 @@ body{
   }
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
-  }
+  } */
   #Contacts{
     flex-wrap: wrap;
+    bottom: 0;
+    position: fixed;
+    width: 90%;
+    align-items: flex-end ;
+
   }
+
+
+  #Home {
+    flex-wrap: wrap;
+  }
+  #Projects{
+    flex-wrap: wrap;
+    width: 100px;
+    height: 100px;
+    border-radius: 135px;
+    margin-left: 2rem;  
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    
+    
+  }
+
+  
 }
 
 
@@ -109,6 +131,10 @@ body{
   text-decoration: none;
   margin-bottom: 400px;
 
+}
+
+.perfil-image{
+  margin-top: 20px;
 }
 
 .presentation-text,span{
@@ -168,6 +194,8 @@ main{
 
 footer{
   display: inline-table;
+  /* flex-direction: row; */
+  bottom: 0;
   height: 120px;
   width: 100%;
   background-color: black;
@@ -179,9 +207,10 @@ footer{
 #Contatcts{
   width: 100%;
   height: 100%;
+  flex-wrap: wrap;
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-  display: inline-block;
-  -ms-flex-item-align: end;
+  /* display: inline-block;
+  -ms-flex-item-align: end; */
 
 
 
